@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 
 const useForm = (initialValue) => {
+  //all codes related to states are moved here
+  //updated states and setState function will be return to whoever is calling this custom hook.
   const [values, setValues] = useState(initialValue);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
