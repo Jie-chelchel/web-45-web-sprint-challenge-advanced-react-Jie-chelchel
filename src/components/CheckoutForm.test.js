@@ -31,8 +31,7 @@ test("form shows success message on submit with form details", () => {
   const orderMessage = screen.getByTestId("successMessage");
   expect(orderMessage).toBeInTheDocument();
   expect(orderMessage).toHaveTextContent("Longmont");
-  expect(orderMessage).toHaveTextContent("Jie");
-  expect(orderMessage).toHaveTextContent("Zhang");
+  expect(orderMessage).toHaveTextContent("Jie Zhang");
   expect(orderMessage).toHaveTextContent("88 S Lambda St");
   expect(orderMessage).toHaveTextContent("80503");
   expect(orderMessage).not.toHaveTextContent("80502");

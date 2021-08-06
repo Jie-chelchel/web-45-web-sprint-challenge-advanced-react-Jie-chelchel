@@ -110,10 +110,20 @@ The form is working, but it is currently controlled by local stateful logic. We 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. What are the main differences between a stateful and a functional component?
+   Stateful component are components that depends on its state object and can change its own state.
+   A functional component is just a js function which returns a React element. However, with the React 16.8 version, it is allows functional component to manage states with React Hooks.
 
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+   (we learned componentDidMount and componentDidUpdate in class, not these two. I am wondering if we have typos here, but I will includes all of them. )
+   componentWillMount is invoked immediately before mounting occurs.It is called before render.  
+   componentDidMount() is invoked immediately after a component is mounted.
+   componentWillUpdate() is invoked immediately before rendering when new props or state are being received.
+   componentDidUpdate() is invoked immediately after updating occurs.
 
 3. Define stateful logic.
-   Stateful logic is any code that uses state in a component.
+   Stateful logic is a logic that is built into a component and that logic deals with state in that component.
 
 4. What are the three step of creating a successful test? What is done in each phase?
+   Arrange: the step we set some stuff up for testing.
+   Act: the step we do something to the selected stuff.
+   Assert: the step we make sure that what we expected to happen, actually happened.
